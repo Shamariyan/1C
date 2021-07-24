@@ -1,10 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 import React from 'react';
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-const Location = () => {
+const Location = ({ navigation }) => {
 	const { number, otp } = useSelector(state => state.loginReducer);
+
+	useEffect(() => {
+		navigation.addListener('beforeRemove', e => {
+			e.preventDefault();
+		});
+	}, [navigation]);
 
 	return (
 		<View style={styles.container}>

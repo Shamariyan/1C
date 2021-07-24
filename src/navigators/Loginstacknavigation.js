@@ -21,7 +21,11 @@ const Loginstacknavigation = () => {
 					component={OtpScreen}
 					options={{ headerShown: false }}
 				/>
-				<Stack.Screen name='Location' component={Location} />
+				<Stack.Screen
+					name='Location'
+					component={Location}
+					options={{ headerLeft: () => {}, headerTitleAlign: 'center' }}
+				/>
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
