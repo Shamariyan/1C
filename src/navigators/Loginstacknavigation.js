@@ -1,5 +1,7 @@
+import Home from '../screens/Home';
 import Location from '../screens/Location';
 import Login from '../screens/Login';
+import Mainbottomtabnavigation from './Mainbottomtabnavigation';
 import { NavigationContainer } from '@react-navigation/native';
 import OtpScreen from '../screens/Otp';
 import React from 'react';
@@ -25,6 +27,11 @@ const Loginstacknavigation = () => {
 					name='Location'
 					component={Location}
 					options={{ headerLeft: () => {}, headerTitleAlign: 'center' }}
+				/>
+				<Stack.Screen
+					name='Home'
+					component={Mainbottomtabnavigation}
+					options={{ headerLeft: () => {}, headerShown: false }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

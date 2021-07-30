@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Box, Center, PresenceTransition, Slide, Text } from 'native-base';
+import { StyleSheet, View } from 'react-native';
 
 import React from 'react';
 import { useEffect } from 'react';
@@ -13,12 +14,38 @@ const Location = ({ navigation }) => {
 		});
 	}, [navigation]);
 
+	const nav = () => {
+		navigation.navigate('Home');
+	};
+
 	return (
-		<View style={styles.container}>
-			<Text>Location screen</Text>
-			<Text>{number}</Text>
-			<Text>{otp}</Text>
-		</View>
+		<Box flex={1} alignItems='center' justifyContent='center'>
+			<PresenceTransition
+				visible={true}
+				initial={{
+					opacity: 0,
+					scale: 0
+				}}
+				animate={{
+					opacity: 1,
+					scale: 1,
+					transition: {
+						duration: 500
+					}
+				}}>
+				<Box bg='emerald.500' p={5}>
+					<Text>Location screen</Text>
+					<Text>{number}</Text>
+					<Text>{otp}</Text>
+					<Text
+						onPress={nav}
+						// style={{ color: '#059669' }}
+					>
+						Go to home
+					</Text>
+				</Box>
+			</PresenceTransition>
+		</Box>
 	);
 };
 

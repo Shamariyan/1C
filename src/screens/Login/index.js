@@ -1,11 +1,5 @@
-import {
-	Button,
-	SafeAreaView,
-	StyleSheet,
-	Text,
-	TextInput,
-	View
-} from 'react-native';
+import { Button, Text, useToast } from 'native-base';
+import { SafeAreaView, StyleSheet, TextInput, View } from 'react-native';
 import { setOtp, setPhoneNumber } from '../../redux/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useRef, useState } from 'react';
@@ -22,6 +16,7 @@ const Login = ({ navigation }) => {
 	const [phoneNumber, setphoneNumber] = useState('');
 
 	const dispatch = useDispatch();
+	const toast = useToast();
 
 	const navigate = () => {
 		seterr(false);
@@ -35,6 +30,14 @@ const Login = ({ navigation }) => {
 			phoneNumber.length == 0
 		) {
 			seterr(true);
+			toast.show({
+				title: 'Invalid Input',
+				placement: 'bottom',
+				status: 'error',
+				description: 'Please enter a valid mobile number to continue ',
+				variant: 'left-accent'
+				// backgroundColor: 'red.500'
+			});
 		} else {
 			dispatch(setPhoneNumber(phoneNumber));
 			navigation.navigate('OtpScreen');
@@ -50,9 +53,15 @@ const Login = ({ navigation }) => {
 					backgroundColor: '#fff'
 				}}>
 				<View>
-					<Text
+					{/* <Text
 						style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center' }}>
 						Login
+					</Text> */}
+					<Text fontSize='4xl' textAlign='center'>
+						Kindly register with your{' '}
+						<Text color='emerald.500' fontSize='4xl'>
+							mobile number
+						</Text>
 					</Text>
 				</View>
 				<View style={styles.container}>
@@ -82,7 +91,7 @@ const Login = ({ navigation }) => {
 								backgroundColor: 'lightgrey',
 								fontSize: 20,
 								borderWidth: err ? 1 : 0,
-								borderColor: err ? '#ef4444' : 'lightgrey'
+								borderColor: 'lightgrey'
 							}}
 							placeholder='Enter your mobile number'
 							keyboardType='number-pad'
@@ -102,13 +111,13 @@ const Login = ({ navigation }) => {
 							}}
 						/>
 					</View>
-					{err ? (
+					{/* {err ? (
 						<Text style={{ color: '#ef4444' }}>
 							Enter a valid mobile number
 						</Text>
 					) : (
 						<Text></Text>
-					)}
+					)} */}
 					<View
 						style={{
 							width: '70%',
@@ -116,7 +125,13 @@ const Login = ({ navigation }) => {
 							borderRadius: 10,
 							overflow: 'hidden'
 						}}>
-						<Button title='Get OTP' color='#ef4444' onPress={navigate} />
+						{/* <Button title='Get OTP' color='#ef4444' onPress={navigate} /> */}
+						<Button
+							bg='#e11d48'
+							_pressed={{ bg: 'emerald.500' }}
+							onPress={navigate}>
+							Get Otp
+						</Button>
 					</View>
 				</View>
 			</View>

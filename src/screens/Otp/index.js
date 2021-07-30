@@ -1,7 +1,8 @@
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRef, useState } from 'react';
 
+import { Button } from 'native-base';
 import React from 'react';
 
 const OtpScreen = ({ navigation }) => {
@@ -95,15 +96,21 @@ const OtpScreen = ({ navigation }) => {
 				/>
 			</View>
 			<View style={{ alignItems: 'center', paddingVertical: '5%' }}>
-				<Button title='Verify' color='#ef4444' onPress={verifyOtp} />
+				{/* <Button title='Verify' color='#ef4444' onPress={verifyOtp} /> */}
+				<Button
+					bg='#e11d48'
+					_pressed={{ bg: 'emerald.500' }}
+					onPress={verifyOtp}>
+					Verify
+				</Button>
 			</View>
 			<Text style={{ textAlign: 'center', fontSize: 16 }}>
 				Need us to verify a different number?
 				<Text
 					style={{
-						color: '#ef4444',
-						textDecorationStyle: 'solid',
-						textDecorationColor: '#ef4444'
+						color: '#ef4444'
+						// textDecorationStyle: 'solid',
+						// textDecorationColor: '#ef4444'
 					}}
 					onPress={goBack}>
 					{''} Click here
