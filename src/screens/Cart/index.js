@@ -52,7 +52,7 @@ const Cart = () => {
 								<Heading size='lg'>Product 1</Heading>
 								<Text color='gray.400'>size:L , color: blue</Text>
 
-								<Text maxWidth='70%'>
+								<Text isTruncated maxWidth='70%' noOfLines={3}>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								</Text>
 								<Badge
@@ -85,7 +85,7 @@ const Cart = () => {
 								<Heading size='lg'>Product 2</Heading>
 								<Text color='gray.400'>size:L , color: blue</Text>
 
-								<Text maxWidth='70%'>
+								<Text isTruncated maxWidth='70%' noOfLines={3}>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								</Text>
 								<Badge
@@ -118,7 +118,7 @@ const Cart = () => {
 								<Heading size='lg'>Product 3</Heading>
 								<Text color='gray.400'>size:L , color: blue</Text>
 
-								<Text maxWidth='70%'>
+								<Text isTruncated maxWidth='70%' noOfLines={3}>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								</Text>
 								<Badge
@@ -151,7 +151,7 @@ const Cart = () => {
 								<Heading size='lg'>Product 4</Heading>
 								<Text color='gray.400'>size:L , color: blue</Text>
 
-								<Text maxWidth='70%'>
+								<Text isTruncated maxWidth='70%' noOfLines={3}>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								</Text>
 								<Badge
