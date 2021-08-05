@@ -1,8 +1,9 @@
+import { Box, Button, Icon } from 'native-base';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useRef, useState } from 'react';
 
-import { Button } from 'native-base';
+import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 
 const OtpScreen = ({ navigation }) => {
@@ -19,7 +20,7 @@ const OtpScreen = ({ navigation }) => {
 	const [t4, sett4] = useState('');
 	const [Otp, setOtp] = useState('');
 	const [seconds, setseconds] = useState(10);
-
+	const [resend, setresend] = useState(false);
 	const { number, otp } = useSelector(state => state.loginReducer);
 
 	const a = useRef();
@@ -44,6 +45,7 @@ const OtpScreen = ({ navigation }) => {
 			setseconds(time);
 			if (time <= 0) {
 				clearInterval(cleanup);
+				setresend(true);
 			}
 		}, 1000);
 	};
@@ -137,7 +139,24 @@ const OtpScreen = ({ navigation }) => {
 					{''} Click here
 				</Text>
 			</Text>
-			<Text style={{ textAlign: 'center' }}>{seconds}</Text>
+			{resend ? (
+				<Box alignItems='center'>
+					<Button
+						size={'lg'}
+						variant='ghost'
+						colorScheme='teal'
+						style={{ maxWidth: '40%' }}>
+						Resend sms
+					</Button>
+				</Box>
+			) : (
+				<Text
+					style={{
+						textAlign: 'center',
+						fontSize: 16,
+						paddingVertical: '3%'
+					}}>{`Resend sms in ${seconds}s`}</Text>
+			)}
 		</View>
 	);
 };

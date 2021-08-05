@@ -1,6 +1,7 @@
 import { Box, Center, PresenceTransition, Slide, Text } from 'native-base';
-import { StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet, View } from 'react-native';
 
+import MapView from 'react-native-maps';
 import React from 'react';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
@@ -33,7 +34,7 @@ const Location = ({ navigation }) => {
 						duration: 500
 					}
 				}}>
-				<Box bg='emerald.500' p={5}>
+				{/* <Box bg='emerald.500' p={5}>
 					<Text>Location screen</Text>
 					<Text>{number}</Text>
 					<Text>{otp}</Text>
@@ -43,7 +44,8 @@ const Location = ({ navigation }) => {
 					>
 						Go to home
 					</Text>
-				</Box>
+				</Box> */}
+				<MapView style={styles.map} />
 			</PresenceTransition>
 		</Box>
 	);
@@ -56,5 +58,9 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: 'center',
 		alignItems: 'center'
+	},
+	map: {
+		width: Dimensions.get('window').width,
+		height: Dimensions.get('window').height
 	}
 });
