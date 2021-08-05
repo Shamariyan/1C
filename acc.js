@@ -1,24 +1,26 @@
-import { Box, Divider, Text, VStack } from 'native-base';
+import React, { useRef } from 'react';
 
-import React from 'react';
+import { Button } from 'react-native';
+import OTPTextInput from 'react-native-otp-textinput';
+import { View } from 'native-base';
 
-const ACC = () => {
+const ParentComponent = () => {
+	var otpInput = useRef(null);
+
+	const clearText = () => {
+		otpInput.current.clear();
+	};
+
+	const setText = () => {
+		otpInput.setValue('1234');
+	};
+
 	return (
-		<Box>
-			<VStack>
-				<Text size='lg'>Orders</Text>
-				<Divider />
-				<Text size='lg'>Address</Text>
-				<Divider />
-				<Text size='lg'>Payment Options</Text>
-				<Divider />
-				<Text size='lg'>Points</Text>
-				<Divider />
-				<Text size='lg'>Wishlist</Text>
-				<Divider />
-			</VStack>
-		</Box>
+		<View>
+			<OTPTextInput ref={e => (otpInput = e)} />
+			<Button title='clear' onClick={setText} />
+		</View>
 	);
 };
 
-export default ACC;
+export default ParentComponent;

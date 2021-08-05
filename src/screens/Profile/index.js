@@ -11,7 +11,6 @@ import {
 	View
 } from 'native-base';
 
-import ACC from '../../../acc';
 import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 

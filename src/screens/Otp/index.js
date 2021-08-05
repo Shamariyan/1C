@@ -1,16 +1,24 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Button } from 'native-base';
 import React from 'react';
 
 const OtpScreen = ({ navigation }) => {
+	useEffect(() => {
+		timeout();
+		return () => {
+			clearInterval(cleanup);
+		};
+	}, []);
+
 	const [t1, sett1] = useState('');
 	const [t2, sett2] = useState('');
 	const [t3, sett3] = useState('');
 	const [t4, sett4] = useState('');
 	const [Otp, setOtp] = useState('');
+	const [seconds, setseconds] = useState(10);
 
 	const { number, otp } = useSelector(state => state.loginReducer);
 
@@ -27,6 +35,19 @@ const OtpScreen = ({ navigation }) => {
 	const goBack = () => {
 		navigation.navigate('Login');
 	};
+
+	var cleanup;
+	const timeout = () => {
+		var time = 10;
+		cleanup = setInterval(() => {
+			time = time - 1;
+			setseconds(time);
+			if (time <= 0) {
+				clearInterval(cleanup);
+			}
+		}, 1000);
+	};
+	console.log(seconds);
 
 	return (
 		<View style={styles.container}>
@@ -116,6 +137,7 @@ const OtpScreen = ({ navigation }) => {
 					{''} Click here
 				</Text>
 			</Text>
+			<Text style={{ textAlign: 'center' }}>{seconds}</Text>
 		</View>
 	);
 };
