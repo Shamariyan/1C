@@ -1,7 +1,7 @@
 import { Box, Center, PresenceTransition, Slide, Text } from 'native-base';
 import { Dimensions, StyleSheet, View } from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
 
-import MapView from 'react-native-maps';
 import React from 'react';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
@@ -9,11 +9,11 @@ import { useSelector } from 'react-redux';
 const Location = ({ navigation }) => {
 	const { number, otp } = useSelector(state => state.loginReducer);
 
-	useEffect(() => {
-		navigation.addListener('beforeRemove', e => {
-			e.preventDefault();
-		});
-	}, [navigation]);
+	// useEffect(() => {
+	// 	navigation.addListener('beforeRemove', e => {
+	// 		e.preventDefault();
+	// 	});
+	// }, [navigation]);
 
 	const nav = () => {
 		navigation.navigate('Home');
@@ -45,7 +45,16 @@ const Location = ({ navigation }) => {
 						Go to home
 					</Text>
 				</Box> */}
-				<MapView style={styles.map} />
+				<MapView
+					style={styles.map}
+					initialRegion={{
+						latitude: 12.988685,
+						longitude: 80.220391,
+						latitudeDelta: 0.15,
+						longitudeDelta: 0.15
+					}}>
+					<Marker coordinate={{ latitude: 12.988685, longitude: 80.220391 }} />
+				</MapView>
 			</PresenceTransition>
 		</Box>
 	);
