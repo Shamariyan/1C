@@ -34,7 +34,8 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.3.0",
     "styled-system": "^5.1.5",
-    "react-native-maps": "0.28.0"
+    "react-native-maps": "0.28.0",
+    "expo-location": "~12.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"

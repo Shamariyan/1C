@@ -1,7 +1,8 @@
 import { NativeBaseProvider, StatusBar, extendTheme } from 'native-base';
 
 import Home from './src/screens/Home';
-import Location from './src/screens/Location';
+import LCTNPGE from './acc';
+import Locationpage from './src/screens/Location';
 import Loginstacknavigation from './src/navigators/Loginstacknavigation';
 import ParentComponent from './acc';
 import { Provider } from 'react-redux';
@@ -15,7 +16,8 @@ export default function App() {
 				{/* <Loginstacknavigation /> */}
 				{/* <Home /> */}
 				{/* <ParentComponent /> */}
-				<Location />
+				{/* <Locationpage /> */}
+				<LCTNPGE />
 			</NativeBaseProvider>
 			<StatusBar barStyle='default' />
 		</Provider>
