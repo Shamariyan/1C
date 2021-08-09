@@ -1,8 +1,15 @@
 import * as Location from 'expo-location';
 
-import { Box, Center, PresenceTransition, Slide, Text } from 'native-base';
+import {
+	Box,
+	Button,
+	Center,
+	PresenceTransition,
+	Slide,
+	Text
+} from 'native-base';
 import { Dimensions, StyleSheet, View } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker, Overlay } from 'react-native-maps';
 import React, { useEffect, useState } from 'react';
 
 import { useSelector } from 'react-redux';
@@ -71,8 +78,27 @@ const Locationpage = ({ navigation }) => {
 							latitudeDelta: 0.15,
 							longitudeDelta: 0.15
 						}}>
-						<Marker coordinate={{ latitude, longitude }} />
+						<Marker
+							coordinate={{ latitude, longitude }}
+							title='Your location'
+							description={`${latitude}   ${longitude}`}
+						/>
 					</MapView>
+					<Overlay
+						style={{
+							width: '100%',
+							position: 'absolute',
+							bottom: 50,
+							alignItems: 'center'
+						}}>
+						<Button
+							width='90%'
+							backgroundColor='#1e293b'
+							color='#e2e8f0'
+							onPress={nav}>
+							Confirm Location
+						</Button>
+					</Overlay>
 				</PresenceTransition>
 			) : (
 				<PresenceTransition
