@@ -28,6 +28,7 @@ const LCTNPGE = () => {
 			console.log('Not granted');
 		} else {
 			setlocation(JSON.stringify(lctnperm.status));
+			console.log('Granted');
 		}
 		const getlctn = await Location.getCurrentPositionAsync();
 		setlatitude(getlctn.coords.latitude);
