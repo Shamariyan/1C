@@ -84,7 +84,7 @@ const Locationpage = ({ navigation }) => {
 							description={`${latitude}   ${longitude}`}
 						/>
 					</MapView>
-					<Overlay
+					<Box
 						style={{
 							width: '100%',
 							position: 'absolute',
@@ -98,7 +98,7 @@ const Locationpage = ({ navigation }) => {
 							onPress={nav}>
 							Confirm Location
 						</Button>
-					</Overlay>
+					</Box>
 				</PresenceTransition>
 			) : (
 				<PresenceTransition
