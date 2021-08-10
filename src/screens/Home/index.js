@@ -10,12 +10,15 @@ import {
 	Text,
 	VStack
 } from 'native-base';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import Recommended from '../../components/Recommended';
 
 const Home = () => {
+	const { number, location } = useSelector(state => state.loginReducer);
+
 	return (
 		<>
 			<Box safeAreaTop backgroundColor='white' />
@@ -37,7 +40,8 @@ const Home = () => {
 						}
 					/>
 					<Text color='#e11d48' fontSize={18} fontWeight='bold'>
-						96, Throwpathy Amman Koil ...
+						{location.latitude}Lat
+						{location.longitude}Lon
 					</Text>
 				</HStack>
 				<HStack pr={3}>

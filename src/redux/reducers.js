@@ -1,8 +1,9 @@
-import { SET_OTP, SET_PHONENUMBER } from './actions';
+import { SET_LOCATION, SET_OTP, SET_PHONENUMBER } from './actions';
 
 const initialState = {
 	number: '',
-	otp: ''
+	otp: '',
+	location: null
 };
 
 function loginReducer(state = initialState, action) {
@@ -11,6 +12,8 @@ function loginReducer(state = initialState, action) {
 			return { ...state, number: action.payload };
 		case SET_OTP:
 			return { ...state, otp: action.payload };
+		case SET_LOCATION:
+			return { ...state, location: action.payload };
 		default:
 			return state;
 	}
