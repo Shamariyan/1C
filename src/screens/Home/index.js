@@ -12,12 +12,24 @@ import {
 } from 'native-base';
 import { useDispatch, useSelector } from 'react-redux';
 
+import Geocoder from 'react-native-geocoding';
 import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import Recommended from '../../components/Recommended';
+import { useEffect } from 'react';
 
 const Home = () => {
+	// const [geocodedAddress, setgeocodedAddress] = useState(null);
+
+	Geocoder.init('AIzaSyCmZ1Sl4g6kFeFlJaPnyffR1p1S1rYMk44');
 	const { number, location } = useSelector(state => state.loginReducer);
+
+	Geocoder.from(location.latitude, location.longitude)
+		.then(json => {
+			var addressComponent = json.results[0].address_components[0];
+			console.log(addressComponent);
+		})
+		.catch(error => console.warn(error));
 
 	return (
 		<>
