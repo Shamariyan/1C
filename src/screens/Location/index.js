@@ -48,7 +48,7 @@ const Locationpage = ({ navigation }) => {
 		}
 
 		//Get the current location
-		const getLocation = await Location.getCurrentPositionAsync({ accuracy: 1 });
+		const getLocation = await Location.getCurrentPositionAsync({ accuracy: 4 });
 		setlatitude(getLocation.coords.latitude);
 		setlongitude(getLocation.coords.longitude);
 	};

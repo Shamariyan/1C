@@ -1,36 +1,27 @@
 import {
 	Box,
-	Button,
-	Center,
 	HStack,
 	Icon,
 	IconButton,
-	NativeBaseProvider,
-	StatusBar,
+	Input,
 	Text,
 	VStack
 } from 'native-base';
 import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
 
 import Geocoder from 'react-native-geocoding';
 import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import Recommended from '../../components/Recommended';
+import { borderColor } from 'styled-system';
 import opencage from 'opencage-api-client';
-import { useEffect } from 'react';
 
 const Home = () => {
-	// const [geocodedAddress, setgeocodedAddress] = useState(null);
+	const [formattedAddress, setformattedAddress] = useState('');
+	const [focussed, setfocussed] = useState(false);
 
-	const { number, location } = useSelector(state => state.loginReducer);
-
-	// Geocoder.init('pk.e2bb2963f007a7db4ca11f4b55376cee');
-	// Geocoder.from(location.latitude, location.longitude)
-	// 	.then(json => {
-	// 		var addressComponent = json.results[0].address_components[0];
-	// 		console.log(addressComponent);
-	// 	})
-	// 	.catch(error => console.warn(error));
+	const { location } = useSelector(state => state.loginReducer);
 
 	if (location !== {}) {
 		const coords = `${location.latitude},${location.longitude}`;
@@ -39,15 +30,17 @@ const Home = () => {
 			.geocode({
 				q: coords,
 				language: 'en',
-				key: '8d28391064c34eebbe4b2c2c958945e3'
+				key: '8d28391064c34eebbe4b2c2c958945e3',
+				roadinfo: 1
 			})
 			.then(data => {
-				// console.log(JSON.stringify(data));
 				if (data.results.length > 0) {
 					const place = data.results[0];
 					console.log(place.formatted);
-					console.log(place.components.road);
-					console.log(place.annotations.timezone.name);
+					const formatted = `${place.components.suburb}, ${place.components.state_district} - ${place.components.postcode}, ${place.components.state}`;
+					// const formatted = `${place.components.suburb} - ${place.components.postcode}`;
+					setformattedAddress(formatted);
+					console.log(formatted);
 				} else {
 					console.log('status', data.status.message);
 					console.log('total_results', data.total_results);
@@ -56,8 +49,7 @@ const Home = () => {
 			.catch(error => {
 				console.log('error', error.message);
 				if (error.status.code === 402) {
-					console.log('hit free trial daily limit');
-					console.log('become a customer: https://opencagedata.com/pricing');
+					console.log('Hit free trial daily limit');
 				}
 			});
 	}
@@ -66,14 +58,44 @@ const Home = () => {
 		<>
 			<Box safeAreaTop backgroundColor='white' />
 			<HStack
+				width='100%'
 				bg='white'
 				px={1}
-				py={3}
+				py={2}
 				justifyContent='space-between'
 				alignItems='center'
 				shadow={5}>
-				<HStack space={5} pl={3} alignItems='center'>
-					<IconButton
+				<HStack px={2}>
+					<Input
+						_focus={{ borderColor: '#e11d48' }}
+						// borderColor='#fff'
+						onFocus={() => setfocussed(true)}
+						// onSubmitEditing={() => setfocussed(false)}
+						InputRightElement={
+							focussed ? (
+								<Icon
+									as={<MaterialIcons name='search' />}
+									size='sm'
+									color='#e11d48'
+									m={3}
+								/>
+							) : (
+								<></>
+							)
+						}
+						placeholder='Search for products, brands & more'
+						_light={{
+							placeholderTextColor: 'blueGray.400'
+						}}
+						_dark={{
+							placeholderTextColor: 'blueGray.50'
+						}}
+					/>
+				</HStack>
+			</HStack>
+			<HStack>
+				<HStack space={2} px={4} py={3} alignItems='center' bg='#fff' w='100%'>
+					{/* <IconButton
 						icon={
 							<Icon
 								size='sm'
@@ -81,23 +103,15 @@ const Home = () => {
 								color='#e11d48'
 							/>
 						}
-					/>
-					<Text color='#e11d48' fontSize={18} fontWeight='bold'>
-						{location.latitude}Lat
-						{location.longitude}Lon
+					/> */}
+					<Text
+						w='95%'
+						color='#e11d48'
+						fontSize={14}
+						fontWeight='bold'
+						isTruncated={true}>
+						Delivering to : {formattedAddress}
 					</Text>
-				</HStack>
-				<HStack pr={3}>
-					<IconButton
-						paddingRight={10}
-						icon={
-							<Icon
-								as={<MaterialIcons name='bolt' />}
-								size='sm'
-								color='#e11d48'
-							/>
-						}
-					/>
 				</HStack>
 			</HStack>
 			<Recommended />
