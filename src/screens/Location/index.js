@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setLocation } from '../../redux/actions';
 
 const Locationpage = ({ navigation }) => {
-	const { number, otp } = useSelector(state => state.loginReducer);
+	const { number, otp, location } = useSelector(state => state.loginReducer);
 	const dispatch = useDispatch();
 
 	const [locationPerm, setlocationPerm] = useState(null);
@@ -56,8 +56,12 @@ const Locationpage = ({ navigation }) => {
 	const nav = () => {
 		setselectedLocation({ latitude, longitude });
 		dispatch(setLocation(selectedLocation));
-		console.log(selectedLocation);
-		navigation.navigate('Home');
+		if (location !== null) {
+			setTimeout(() => {
+				console.log(selectedLocation);
+				navigation.navigate('Home');
+			}, 1);
+		}
 	};
 
 	return (

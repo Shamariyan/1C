@@ -32,33 +32,35 @@ const Home = () => {
 	// 	})
 	// 	.catch(error => console.warn(error));
 
-	const coords = `${location.latitude},${location.longitude}`;
+	if (location !== {}) {
+		const coords = `${location.latitude},${location.longitude}`;
 
-	opencage
-		.geocode({
-			q: coords,
-			language: 'en',
-			key: '8d28391064c34eebbe4b2c2c958945e3'
-		})
-		.then(data => {
-			// console.log(JSON.stringify(data));
-			if (data.results.length > 0) {
-				const place = data.results[0];
-				console.log(place.formatted);
-				console.log(place.components.road);
-				console.log(place.annotations.timezone.name);
-			} else {
-				console.log('status', data.status.message);
-				console.log('total_results', data.total_results);
-			}
-		})
-		.catch(error => {
-			console.log('error', error.message);
-			if (error.status.code === 402) {
-				console.log('hit free trial daily limit');
-				console.log('become a customer: https://opencagedata.com/pricing');
-			}
-		});
+		opencage
+			.geocode({
+				q: coords,
+				language: 'en',
+				key: '8d28391064c34eebbe4b2c2c958945e3'
+			})
+			.then(data => {
+				// console.log(JSON.stringify(data));
+				if (data.results.length > 0) {
+					const place = data.results[0];
+					console.log(place.formatted);
+					console.log(place.components.road);
+					console.log(place.annotations.timezone.name);
+				} else {
+					console.log('status', data.status.message);
+					console.log('total_results', data.total_results);
+				}
+			})
+			.catch(error => {
+				console.log('error', error.message);
+				if (error.status.code === 402) {
+					console.log('hit free trial daily limit');
+					console.log('become a customer: https://opencagedata.com/pricing');
+				}
+			});
+	}
 
 	return (
 		<>
