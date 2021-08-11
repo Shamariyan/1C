@@ -16,20 +16,49 @@ import Geocoder from 'react-native-geocoding';
 import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import Recommended from '../../components/Recommended';
+import opencage from 'opencage-api-client';
 import { useEffect } from 'react';
 
 const Home = () => {
 	// const [geocodedAddress, setgeocodedAddress] = useState(null);
 
-	Geocoder.init('AIzaSyCmZ1Sl4g6kFeFlJaPnyffR1p1S1rYMk44');
 	const { number, location } = useSelector(state => state.loginReducer);
 
-	Geocoder.from(location.latitude, location.longitude)
-		.then(json => {
-			var addressComponent = json.results[0].address_components[0];
-			console.log(addressComponent);
+	// Geocoder.init('pk.e2bb2963f007a7db4ca11f4b55376cee');
+	// Geocoder.from(location.latitude, location.longitude)
+	// 	.then(json => {
+	// 		var addressComponent = json.results[0].address_components[0];
+	// 		console.log(addressComponent);
+	// 	})
+	// 	.catch(error => console.warn(error));
+
+	const coords = `${location.latitude},${location.longitude}`;
+
+	opencage
+		.geocode({
+			q: coords,
+			language: 'en',
+			key: '8d28391064c34eebbe4b2c2c958945e3'
 		})
-		.catch(error => console.warn(error));
+		.then(data => {
+			// console.log(JSON.stringify(data));
+			if (data.results.length > 0) {
+				const place = data.results[0];
+				console.log(place.formatted);
+				console.log(place.components.road);
+				console.log(place.annotations.timezone.name);
+			} else {
+				console.log('status', data.status.message);
+				console.log('total_results', data.total_results);
+			}
+		})
+		.catch(error => {
+			console.log('error', error.message);
+			if (error.status.code === 402) {
+				console.log('hit free trial daily limit');
+				console.log('become a customer: https://opencagedata.com/pricing');
+			}
+		});
 
 	return (
 		<>
