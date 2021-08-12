@@ -36,11 +36,11 @@ const Home = () => {
 			.then(data => {
 				if (data.results.length > 0) {
 					const place = data.results[0];
-					console.log(place.formatted);
-					const formatted = `${place.components.suburb}, ${place.components.state_district} - ${place.components.postcode}, ${place.components.state}`;
+					// console.log(place.formatted);
+					// const formatted = `${place.components.suburb}, ${place.components.state_district} - ${place.components.postcode}, ${place.components.state}`;
 					// const formatted = `${place.components.suburb} - ${place.components.postcode}`;
-					setformattedAddress(formatted);
-					console.log(formatted);
+					setformattedAddress(place.formatted);
+					console.log(place.formatted);
 				} else {
 					console.log('status', data.status.message);
 					console.log('total_results', data.total_results);
