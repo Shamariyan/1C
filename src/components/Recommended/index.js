@@ -71,13 +71,13 @@ const Recommended = () => {
 										roundedTop='md'
 										roundedBottom='md'
 									/>
-									<Heading size='md' px={1}>
+									<Heading size='md' px={1} my={3}>
 										{item}
 									</Heading>
 									<Badge
 										py={1}
 										px={1}
-										my={3}
+										mb={3}
 										borderRadius={18}
 										colorScheme='success'
 										maxWidth='60%'
@@ -101,7 +101,7 @@ const Recommended = () => {
 									<Text isTruncated>Client name</Text>
 									<Button
 										variant='outline'
-										colorScheme='secondary'
+										colorScheme='rose'
 										// color='#e11d48'
 									>
 										Add To Cart
