@@ -1,0 +1,764 @@
+[
+  {
+    "vendor_Name": "DIGIRANG",
+    "vendor_Id": "611d0c2c40a14249b0260376",
+    "vendor_Category": "Cakes",
+    "email": "diannmorgan@digirang.com",
+    "phone": "+91 (891) 545-3894",
+    "serving_Locations": [
+      {
+        "serving_city": "Wright",
+        "store_Address": "857 Hunts Lane, Gibbsville, Oregon, 2754"
+      },
+      {
+        "serving_city": "Riviera",
+        "store_Address": "141 Story Street, Jugtown, California, 5185"
+      }
+    ],
+    "Products_List": [
+      {
+        "product_Name": "ACCUFARM",
+        "product_Id": "fdc0ffcc-18e2-4565-88c3-f4da4c358448",
+        "SKU_ID": "611d0c2c810c56bc7a21bc63",
+        "available_No_Of_products": 62,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Proident do magna tempor aliqua magna sit culpa tempor.",
+        "product_Description": "Culpa nulla commodo incididunt minim duis. Consequat proident minim culpa magna nisi veniam irure. Commodo Lorem esse Lorem sint quis aliqua magna. Consectetur reprehenderit aute adipisicing ex aliqua adipisicing id magna proident aliquip ea. Veniam adipisicing nulla id Lorem incididunt sunt veniam cupidatat mollit non fugiat tempor. Magna do ipsum aliqua reprehenderit minim id.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Fri Jun 11 1976 11:12:59 GMT+0530 (India Standard Time)",
+            "effective_To": "Tue May 07 1991 23:44:02 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Wed Dec 31 1975 02:47:43 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Aug 31 2003 05:18:05 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "qui",
+          "id",
+          "laboris",
+          "officia",
+          "ipsum",
+          "duis",
+          "nulla"
+        ]
+      },
+      {
+        "product_Name": "XERONK",
+        "product_Id": "cb815f5b-a526-480d-942d-4dd0f95f203d",
+        "SKU_ID": "611d0c2c41f3bc4bce6328df",
+        "available_No_Of_products": 79,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          }
+        ],
+        "product_Oneliner": "Aliquip laboris ex tempor est nisi voluptate mollit est.",
+        "product_Description": "Incididunt eu amet voluptate do aute esse ipsum aliquip sunt elit velit cupidatat culpa adipisicing. Veniam ex velit esse elit minim occaecat minim id consectetur elit do eu. Tempor fugiat ullamco cupidatat ex voluptate veniam incididunt aute anim et quis. Exercitation minim velit consequat cupidatat occaecat duis. Velit exercitation quis amet cupidatat qui exercitation occaecat sint qui incididunt ullamco reprehenderit. Do dolor sint in aute reprehenderit amet dolor veniam enim culpa aute pariatur. Esse reprehenderit ea voluptate commodo ex voluptate consectetur sunt elit et proident laborum quis in.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Sun Nov 16 2008 06:36:44 GMT+0530 (India Standard Time)",
+            "effective_To": "Wed Nov 07 1990 06:03:03 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Sat Jun 11 1994 07:17:33 GMT+0530 (India Standard Time)",
+            "effective_To": "Wed Jul 26 1972 06:35:37 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "ea",
+          "fugiat",
+          "exercitation",
+          "dolore",
+          "incididunt",
+          "in",
+          "deserunt"
+        ]
+      },
+      {
+        "product_Name": "PORTALIS",
+        "product_Id": "03d76cd9-51cd-44c5-9295-972c65594bd9",
+        "SKU_ID": "611d0c2c7a92b087533c4984",
+        "available_No_Of_products": 58,
+        "in_Stock": false,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Id aute veniam consequat exercitation proident pariatur.",
+        "product_Description": "In ipsum nisi commodo ea. Est mollit ut duis aliquip velit aliqua. Occaecat sint ea officia ipsum pariatur minim laborum voluptate consequat id ullamco adipisicing. Excepteur fugiat aliquip tempor voluptate aute nostrud id laboris. Ex ut eiusmod aute cillum nostrud sit aute eiusmod voluptate aliquip adipisicing veniam ut. Magna aute do exercitation elit et incididunt deserunt labore. Minim minim non enim do et et nostrud labore aliqua do aute labore commodo laborum.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Fri Nov 15 1974 23:54:19 GMT+0530 (India Standard Time)",
+            "effective_To": "Wed Mar 12 2003 10:36:46 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Sat Aug 08 1981 07:07:54 GMT+0530 (India Standard Time)",
+            "effective_To": "Fri Apr 23 1993 04:33:58 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "laboris",
+          "id",
+          "voluptate",
+          "cillum",
+          "eu",
+          "minim",
+          "cupidatat"
+        ]
+      },
+      {
+        "product_Name": "PARCOE",
+        "product_Id": "d1638cec-7664-4b26-960f-40238c726d7f",
+        "SKU_ID": "611d0c2ce6329805db41e74d",
+        "available_No_Of_products": 44,
+        "in_Stock": false,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          }
+        ],
+        "product_Oneliner": "Culpa velit fugiat aliqua ut mollit in et incididunt enim commodo ad tempor aliqua eu.",
+        "product_Description": "In elit dolor do non eiusmod magna ullamco est amet deserunt cupidatat commodo. Elit Lorem quis excepteur anim cillum laboris duis veniam aliquip sunt culpa esse. Exercitation consectetur id cupidatat aliquip non ullamco culpa proident mollit adipisicing cupidatat voluptate. Lorem voluptate tempor excepteur pariatur non.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Sat May 26 1973 19:35:26 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Apr 26 1987 21:34:58 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Sat May 09 2020 23:03:39 GMT+0530 (India Standard Time)",
+            "effective_To": "Sat Aug 06 1977 15:45:18 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "Lorem",
+          "aliquip",
+          "cillum",
+          "excepteur",
+          "cupidatat",
+          "magna",
+          "Lorem"
+        ]
+      },
+      {
+        "product_Name": "BEZAL",
+        "product_Id": "6b3809a1-a80d-49e0-ad09-a67c681d7c4a",
+        "SKU_ID": "611d0c2ccef320df8106fbcc",
+        "available_No_Of_products": 44,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Est exercitation et est nulla nostrud.",
+        "product_Description": "Aliquip cillum officia exercitation culpa velit id est elit nostrud. Voluptate duis et officia ea in. Qui nostrud qui Lorem sunt et tempor elit aute est excepteur occaecat. Ea ipsum non officia ut ea. Consectetur laboris dolore enim elit consequat exercitation sunt excepteur ea exercitation incididunt ut dolore.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Tue Jan 26 1982 19:58:51 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Jul 18 2021 19:17:44 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Tue Jun 03 1980 14:01:03 GMT+0530 (India Standard Time)",
+            "effective_To": "Thu Oct 19 2000 17:08:47 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "eiusmod",
+          "aliquip",
+          "do",
+          "sunt",
+          "ex",
+          "qui",
+          "anim"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor_Name": "WEBIOTIC",
+    "vendor_Id": "611d0c2c09808bd8ae09678f",
+    "vendor_Category": "Groceries",
+    "email": "diannmorgan@webiotic.com",
+    "phone": "+91 (807) 535-3923",
+    "serving_Locations": [
+      {
+        "serving_city": "Shaft",
+        "store_Address": "337 Church Avenue, Coloma, Puerto Rico, 2746"
+      },
+      {
+        "serving_city": "Gulf",
+        "store_Address": "591 Montgomery Place, Kilbourne, Oklahoma, 9278"
+      }
+    ],
+    "Products_List": [
+      {
+        "product_Name": "CINASTER",
+        "product_Id": "1cd571b8-0688-4512-b29c-8ce6957f8ca7",
+        "SKU_ID": "611d0c2ccaaa137c8752f9af",
+        "available_No_Of_products": 63,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?product"
+          }
+        ],
+        "product_Oneliner": "Lorem irure mollit velit velit culpa consectetur nisi ea dolor cillum commodo pariatur Lorem.",
+        "product_Description": "Officia duis fugiat laboris ipsum laboris pariatur. Lorem aute esse ea reprehenderit reprehenderit ad. Sunt ipsum reprehenderit voluptate est et veniam deserunt amet laboris amet qui. Enim elit ex ullamco ullamco mollit quis dolore proident dolore.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Fri Jun 18 1971 21:58:58 GMT+0530 (India Standard Time)",
+            "effective_To": "Tue Aug 13 1974 15:36:21 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Mon Nov 13 2000 09:46:24 GMT+0530 (India Standard Time)",
+            "effective_To": "Tue Mar 07 1989 02:13:42 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "excepteur",
+          "ea",
+          "nostrud",
+          "ex",
+          "est",
+          "ea",
+          "veniam"
+        ]
+      },
+      {
+        "product_Name": "LEXICONDO",
+        "product_Id": "129a5468-f41d-4ffb-bfc3-463d9c656455",
+        "SKU_ID": "611d0c2c25a2075b058fdbc0",
+        "available_No_Of_products": 46,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Anim excepteur incididunt dolore ea quis esse ipsum et minim officia duis tempor qui esse.",
+        "product_Description": "Aliquip labore pariatur id est irure Lorem amet consequat quis et. Cupidatat dolore est reprehenderit eu laboris adipisicing dolore labore non. Voluptate aliquip consequat cupidatat et. Mollit qui officia cillum quis fugiat esse exercitation qui nisi quis laborum. Proident esse officia adipisicing sunt enim mollit aliquip ex est in sint amet. Sunt sint aliquip Lorem tempor esse commodo deserunt irure cupidatat mollit pariatur aliqua eiusmod.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Tue Nov 09 1993 16:54:10 GMT+0530 (India Standard Time)",
+            "effective_To": "Sat Jul 22 1972 06:35:05 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Tue Mar 18 1980 09:01:56 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Apr 12 2009 02:37:58 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "reprehenderit",
+          "labore",
+          "ex",
+          "ut",
+          "pariatur",
+          "in",
+          "culpa"
+        ]
+      },
+      {
+        "product_Name": "REVERSUS",
+        "product_Id": "be2fea1d-62d2-4265-9dd8-145a512fb3cf",
+        "SKU_ID": "611d0c2cbe2f60d2606aae84",
+        "available_No_Of_products": 63,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Exercitation aliquip irure deserunt duis elit velit ad non duis.",
+        "product_Description": "Duis ad enim cupidatat deserunt exercitation sunt laboris elit cupidatat officia esse dolor commodo. Sint commodo ad magna nostrud. Velit fugiat quis occaecat in est nulla proident elit duis ad culpa non ut. Sit cillum id aliqua Lorem minim pariatur amet voluptate.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Wed Dec 30 1981 08:19:56 GMT+0530 (India Standard Time)",
+            "effective_To": "Fri Aug 17 1984 20:03:05 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Wed Jun 05 2002 07:23:39 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Nov 14 1976 06:56:17 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "irure",
+          "aliqua",
+          "amet",
+          "proident",
+          "duis",
+          "nisi",
+          "ad"
+        ]
+      },
+      {
+        "product_Name": "ISOSURE",
+        "product_Id": "a83658fd-a8ff-4a93-b162-77a0e86fcf0d",
+        "SKU_ID": "611d0c2c4e3246011aa527f5",
+        "available_No_Of_products": 78,
+        "in_Stock": false,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Qui occaecat nisi sit magna cupidatat.",
+        "product_Description": "Eiusmod non elit nostrud officia esse voluptate est quis incididunt et consectetur reprehenderit voluptate ex. Dolor do sit do fugiat incididunt Lorem. Laboris ea aliqua et ullamco veniam aute pariatur commodo et sit sit. Minim esse minim enim deserunt fugiat et labore labore laboris ullamco anim elit quis cillum.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Tue Sep 17 1985 05:10:31 GMT+0530 (India Standard Time)",
+            "effective_To": "Tue Aug 19 2003 15:31:58 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Wed Sep 20 1995 22:23:47 GMT+0530 (India Standard Time)",
+            "effective_To": "Thu Jun 28 1973 23:58:56 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "minim",
+          "magna",
+          "anim",
+          "exercitation",
+          "proident",
+          "incididunt",
+          "adipisicing"
+        ]
+      },
+      {
+        "product_Name": "TUBALUM",
+        "product_Id": "b893711c-d164-4e3b-84a7-b34737c2f8fb",
+        "SKU_ID": "611d0c2c721b093d1f82c2c2",
+        "available_No_Of_products": 46,
+        "in_Stock": false,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Anim consequat ut amet irure proident incididunt cillum consectetur.",
+        "product_Description": "Esse anim magna nisi ullamco. Irure ea dolor eiusmod Lorem minim sit mollit et proident deserunt tempor Lorem. Irure veniam sunt aliqua eu velit irure laborum ea non aliquip mollit. Consequat laboris mollit do et aliquip aliqua nisi excepteur eiusmod nisi mollit quis qui ullamco. Ex minim cillum cupidatat amet dolor eiusmod ex veniam. Voluptate veniam sunt in nulla fugiat do ipsum eu voluptate labore.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Thu Mar 03 1988 22:48:28 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Sep 05 2004 04:40:00 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Fri Jun 25 1993 09:54:12 GMT+0530 (India Standard Time)",
+            "effective_To": "Fri Sep 12 2003 04:05:47 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "enim",
+          "fugiat",
+          "fugiat",
+          "sunt",
+          "nulla",
+          "culpa",
+          "ipsum"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor_Name": "KINDALOO",
+    "vendor_Id": "611d0c2c2c6cb8a5ddc1c53a",
+    "vendor_Category": "Stationary",
+    "email": "diannmorgan@kindaloo.com",
+    "phone": "+91 (875) 411-2134",
+    "serving_Locations": [
+      {
+        "serving_city": "Sparkill",
+        "store_Address": "787 Beard Street, Marion, Wisconsin, 6428"
+      },
+      {
+        "serving_city": "Sunbury",
+        "store_Address": "571 Ryerson Street, Shepardsville, Arizona, 7743"
+      }
+    ],
+    "Products_List": [
+      {
+        "product_Name": "PANZENT",
+        "product_Id": "4ddbc7cd-9f24-46e6-8b88-6205e533c0c9",
+        "SKU_ID": "611d0c2c4a1fcd087aa4327e",
+        "available_No_Of_products": 67,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Proident ea culpa enim tempor ex culpa magna enim occaecat qui.",
+        "product_Description": "Anim excepteur aute ad aute. Consectetur fugiat enim amet culpa sunt culpa dolore do cupidatat magna. Est consequat sit adipisicing deserunt ea aliqua elit. Occaecat proident laborum incididunt enim anim duis sit ex duis nostrud enim elit. Duis esse qui anim ut tempor eiusmod eu id velit non esse ex officia. In dolor esse ipsum velit non non consectetur laborum laboris enim sunt.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Thu Oct 05 1995 04:01:20 GMT+0530 (India Standard Time)",
+            "effective_To": "Sat Jan 21 1978 12:40:42 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Wed Mar 11 1992 08:55:16 GMT+0530 (India Standard Time)",
+            "effective_To": "Wed Apr 28 2004 17:14:58 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "eiusmod",
+          "id",
+          "commodo",
+          "amet",
+          "amet",
+          "sint",
+          "magna"
+        ]
+      },
+      {
+        "product_Name": "ZORROMOP",
+        "product_Id": "7335933d-1942-4e87-9c19-9946dc02f453",
+        "SKU_ID": "611d0c2c1c56a47776e27efa",
+        "available_No_Of_products": 47,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Excepteur fugiat cupidatat laboris adipisicing velit.",
+        "product_Description": "Eu magna et ullamco ut. Aliqua cillum et culpa aliquip minim sint aute qui non dolor sit dolore in. Voluptate exercitation quis magna elit voluptate adipisicing adipisicing tempor sint cupidatat. Ad officia esse laboris commodo sit ad qui proident sunt nulla. Qui laboris cillum dolor excepteur nisi quis ut dolore ea est cupidatat. Fugiat officia nostrud consequat eiusmod nisi eu. Ut sit esse excepteur officia culpa occaecat elit anim non ipsum ut.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Sun Apr 13 2003 14:10:23 GMT+0530 (India Standard Time)",
+            "effective_To": "Thu Aug 15 1974 20:41:28 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Wed Sep 02 1987 09:27:22 GMT+0530 (India Standard Time)",
+            "effective_To": "Sat Oct 11 2014 02:53:20 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "proident",
+          "irure",
+          "voluptate",
+          "ex",
+          "officia",
+          "aliquip",
+          "ex"
+        ]
+      },
+      {
+        "product_Name": "MACRONAUT",
+        "product_Id": "c77ca6aa-9700-4c7c-b320-27a4c25677f3",
+        "SKU_ID": "611d0c2c89c4483acda35259",
+        "available_No_Of_products": 42,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Officia cillum ipsum ex sit quis deserunt magna adipisicing non pariatur Lorem est do sint.",
+        "product_Description": "Commodo duis irure cillum ad nulla eu id adipisicing ullamco voluptate. Amet exercitation veniam dolore cillum incididunt exercitation deserunt eu id. Eiusmod cupidatat sunt reprehenderit enim.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Mon Dec 25 1972 13:10:17 GMT+0530 (India Standard Time)",
+            "effective_To": "Wed Oct 10 2012 15:59:28 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Sun Dec 09 1990 00:53:14 GMT+0530 (India Standard Time)",
+            "effective_To": "Wed Sep 28 2016 09:48:59 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "esse",
+          "ea",
+          "anim",
+          "excepteur",
+          "amet",
+          "exercitation",
+          "sint"
+        ]
+      },
+      {
+        "product_Name": "MEDMEX",
+        "product_Id": "2040e75e-7233-4ab5-bea5-e9cc82e07598",
+        "SKU_ID": "611d0c2c453e5803f718e00d",
+        "available_No_Of_products": 85,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Magna tempor consequat id id ipsum id ea enim eu ullamco irure sit id consequat.",
+        "product_Description": "Est nisi qui duis ullamco magna. Excepteur enim nostrud do pariatur amet irure laborum cillum ullamco deserunt. Esse ex proident duis eiusmod fugiat ut deserunt ad aute et reprehenderit enim minim.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Thu Oct 22 1998 14:01:03 GMT+0530 (India Standard Time)",
+            "effective_To": "Tue Apr 12 2011 07:05:45 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Thu Nov 20 2003 06:34:59 GMT+0530 (India Standard Time)",
+            "effective_To": "Sat Nov 08 1980 15:22:50 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          }
+        ],
+        "product_Tags": [
+          "pariatur",
+          "mollit",
+          "irure",
+          "amet",
+          "non",
+          "nulla",
+          "sint"
+        ]
+      },
+      {
+        "product_Name": "EXOTECHNO",
+        "product_Id": "e8ec6642-bccb-42f0-9529-0183d23eaf13",
+        "SKU_ID": "611d0c2ccc9cd12759295fc5",
+        "available_No_Of_products": 72,
+        "in_Stock": true,
+        "product_Pictures": [
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          },
+          {
+            "product_Image": "https://source.unsplash.com/300x300/?products"
+          }
+        ],
+        "product_Oneliner": "Sit excepteur ut sunt culpa cillum nulla dolor.",
+        "product_Description": "Non irure cillum occaecat mollit amet exercitation qui esse laborum magna. Sunt mollit adipisicing exercitation velit officia velit fugiat fugiat ad cupidatat. Commodo velit consequat est proident ex ad eu veniam eu veniam incididunt in. Culpa et fugiat do ex mollit eiusmod ipsum sit occaecat.\r\n",
+        "price_Book": [
+          {
+            "price_Type": "Seasonal",
+            "price": 200,
+            "UOM": "kg",
+            "effective_From": "Tue Aug 15 2000 23:32:40 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Nov 28 2004 08:37:47 GMT+0530 (India Standard Time)",
+            "is_Active": false
+          },
+          {
+            "price_Type": "Everyday",
+            "price": 300,
+            "UOM": "kg",
+            "effective_From": "Mon Mar 13 1989 04:07:02 GMT+0530 (India Standard Time)",
+            "effective_To": "Sun Feb 26 1995 02:53:17 GMT+0530 (India Standard Time)",
+            "is_Active": true
+          }
+        ],
+        "product_Tags": [
+          "mollit",
+          "magna",
+          "pariatur",
+          "officia",
+          "quis",
+          "sint",
+          "adipisicing"
+        ]
+      }
+    ]
+  }
+]

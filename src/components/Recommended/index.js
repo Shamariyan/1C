@@ -63,7 +63,7 @@ const Recommended = () => {
 									<Image
 										px={1}
 										source={{
-											uri: 'https://picsum.photos/300'
+											uri: 'https://source.unsplash.com/300x300/?products'
 										}}
 										alt='image base'
 										resizeMode='cover'
